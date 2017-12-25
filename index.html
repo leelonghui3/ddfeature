@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>How significant Non-US players in NBA?</title>
+  <!-- Load jQuery -->
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+
+  <!-- Load UiKit & custom CSS -->
+  <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
+  <script type="text/javascript" src="uikit/js/uikit.min.js"></script>
+  <link rel="stylesheet" href="uikit/css/uikit.almost-flat.min.css">
+
+  <!-- Load Highcharts library -->
+  <script type="text/javascript" src="highcharts/highcharts.js"></script>
+  <script type="text/javascript" src="highcharts/modules/exporting.js"></script>
+  <script type="text/javascript" src="highcharts/modules/series-label.js"></script>
+  <script type="text/javascript" src="highcharts/modules/annotations.js"></script>
+  <script type="text/javascript" src="highcharts/modules/exporting.js"></script>
+  <script type="text/javascript" src="highcharts/modules/sankey.js"></script>
+</head>
+
+<body>
+
+  <div id="chart"></div>
+  <div id="sankey" style="height: 900px;"></div>
+
+  <script type="text/javascript">
+    Highcharts.chart('chart', {
+      title: {
+        text: "Working title"
+      },
+      subtitle: {
+        text: 'NBA.com',
+      },
+      credits: {
+        text: 'Lee Long Hui',
+        href: 'https://twitter.com/leelonghui'
+      },
+      xAxis: {
+        categories: ['2000-01', '2001-02', '2002-03', '2003-04', '2004-05', '2005-06', '2006-07', '2007-08', '2008-09', '2009-10', '2010-11', '2011-12', '2012-13', '2013-14', '2014-15', '2015-16', '2016-17']
+      },
+      yAxis: [{
+        labels: {
+          format: '{value}%',
+        },
+        title: {
+          text: 'Percentage',
+        }
+      }, {
+        labels: {
+          format: '{value}',
+        },
+        title: {
+          text: 'Number of players',
+        },
+        opposite: true
+      }],
+      tooltip: {
+        shared: true
+      },
+      series: [{
+        type: 'column',
+        name: 'Points',
+        data: [6.47, 9.44, 11.58, 13.59, 13.22, 15.48, 15.03, 16.26, 16.39, 16.19, 16.86, 15.98, 16.14, 16.12, 19.49, 20.18, 22.28],
+        tooltip: {
+          valueSuffix: '%'
+        }
+      }, {
+        type: 'column',
+        name: 'Rebounds',
+        data: [8.26, 11.66, 13.11, 15.19, 14.87, 18.42, 17.17, 18.48, 19.28, 19.12, 19.13, 19.08, 19.62, 20.68, 23.95, 24.42, 26.53],
+        tooltip: {
+          valueSuffix: '%'
+        }
+      }, {
+        type: 'column',
+        name: 'Assists',
+        data: [4.94, 7.34, 9.85, 12.73, 12.12, 14.71, 13.78, 15.69, 15.77, 15.69, 16.79, 16.71, 17.72, 16.26, 17.60, 20.07, 21.94],
+        tooltip: {
+          valueSuffix: '%'
+        }
+      }, {
+        type: 'spline',
+        name: 'Number of players',
+        yAxis: 1,
+        data: [37, 47, 61, 60, 71, 77, 68, 67, 68, 74, 81, 82, 84, 91, 100, 100, 115]
+      }]
+    });
+
+    Highcharts.chart('sankey', {
+      title: {
+        text: 'Working title 2'
+      },
+      credits: {
+        text: 'Lee Long Hui',
+        href: 'https://twitter.com/leelonghui'
+      },
+      series: [{
+        type: 'sankey',
+        name: null,
+        keys: ['from', 'to', 'weight'],
+        data: [
+          ['Argentina', 'ATL', 1],
+          ['Argentina', 'SAS', 1],
+          ['Australia', 'BOS', 2],
+          ['Australia', 'CHA', 1],
+          ['Australia', 'LAL', 1],
+          ['Australia', 'MIL', 1],
+          ['Australia', 'PHI', 1],
+          ['Australia', 'SAS', 1],
+          ['Australia', 'UTA', 1],
+          ['Austria', 'TOR', 1],
+          ['Bahamas', 'SAC', 1],
+          ['Bosnia & Herzegovina', 'MIL', 1],
+          ['Brazil', 'CHI', 1],
+          ['Brazil', 'HOU', 1],
+          ['Brazil', 'TOR', 2],
+          ['Brazil', 'UTA', 1],
+          ['Cameroon', 'HOU', 1],
+          ['Cameroon', 'PHI', 1],
+          ['Cameroon', 'TOR', 1],
+          ['Canada', 'BKN', 1],
+          ['Canada', 'CLE', 1],
+          ['Canada', 'DAL', 1],
+          ['Canada', 'DEN', 1],
+          ['Canada', 'IND', 1],
+          ['Canada', 'LAL', 1],
+          ['Canada', 'MEM', 1],
+          ['Canada', 'MIA', 1],
+          ['Canada', 'MIN', 1],
+          ['Canada', 'ORL', 1],
+          ['China', 'HOU', 1],
+          ['Congo', 'DEN', 1],
+          ['Congo', 'ORL', 1],
+          ['Croatia', 'CLE', 1],
+          ['Croatia', 'IND', 1],
+          ['Croatia', 'LAL', 1],
+          ['Croatia', 'ORL', 1],
+          ['Croatia', 'PHI', 1],
+          ['Croatia', 'PHX', 1],
+          ['Czech Republic', 'WAS', 1],
+          ['Dominican Republic', 'BOS', 1],
+          ['Egypt', 'BOS', 1],
+          ['UK', 'LAL', 1],
+          ['UK', 'TOR', 1],
+          ['Finland', 'CHI', 1],
+          ['France', 'BOS', 1],
+          ['France', 'CHA', 1],
+          ['France', 'NYK', 1],
+          ['France', 'ORL', 1],
+          ['France', 'PHI', 1],
+          ['France', 'SAS', 2],
+          ['France', 'UTA', 1],
+          ['France', 'WAS', 1],
+          ['Georgia', 'GSW', 1],
+          ['Germany', 'ATL', 1],
+          ['Germany', 'BOS', 1],
+          ['Germany', 'PHI', 1],
+          ['Germany', 'DAL', 2],
+          ['Greece', 'MIL', 1],
+          ['Greece', 'SAC', 1],
+          ['Haiti', 'SAC', 1],
+          ['Israel', 'GSW', 1],
+          ['Israel', 'IND', 1],
+          ['Italy', 'ATL', 1],
+          ['Italy', 'LAC', 1],
+          ['Latvia', 'NYK', 1],
+          ['Latvia', 'SAS', 1],
+          ['Lithuania', 'IND', 1],
+          ['Lithuania', 'NYK', 1],
+          ['Lithuania', 'TOR', 1],
+          ['Mali', 'NOP', 1],
+          ['Montenegro', 'CHI', 1],
+          ['Montenegro', 'ORL', 1],
+          ['New Zealand', 'OKC', 1],
+          ['Poland', 'WAS', 1],
+          ['Puerto Rico', 'DAL', 2],
+          ['Russia', 'BKN', 1],
+          ['Senegal', 'MIN', 1],
+          ['Serbia', 'DEN', 1],
+          ['Serbia', 'DET', 1],
+          ['Serbia', 'LAC', 1],
+          ['Serbia', 'MIN', 1],
+          ['Serbia', 'SAC', 1],
+          ['Slovenia', 'MIA', 1],
+          ['South Sudan', 'MIL', 1],
+          ['Spain', 'CLE', 1],
+          ['Spain', 'DEN', 1],
+          ['Spain', 'MEM', 1],
+          ['Spain', 'NYK', 1],
+          ['Spain', 'OKC', 1],
+          ['Spain', 'SAS', 1],
+          ['Spain', 'TOR', 1],
+          ['Spain', 'UTA', 1],
+          ['Sweden', 'UTA', 1],
+          ['Switzerland', 'HOU', 1],
+          ['Switzerland', 'UTA', 1],
+          ['Tunisia', 'DAL', 1],
+          ['Turkey', 'ATL', 1],
+          ['Turkey', 'CLE', 1],
+          ['Turkey', 'NOP', 1],
+          ['Turkey', 'NYK', 1],
+          ['Turkey', 'PHI', 1],
+          ['Ukraine', 'MIL', 1],
+          ['Ukraine', 'PHX', 1]
+        ],
+      }]
+    });
+  </script>
+</body>
+
+</html>
