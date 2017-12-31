@@ -1,3 +1,63 @@
-#map {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: #eff3ff;
+}
+
+p {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.giannis {
+  padding-bottom: 50px;
+  padding-top: 50px;
   height: 500px;
+  background: url(img/Giannis_Antetokounmpo.jpg);
+}
+
+.max-size {
+  max-width: 600px;
+}
+
+.chart-wrapper {
+  border:1px solid #D3D3D3;
+  max-width: 100%;
+  /* margin: 20px auto; */
+}
+
+.chart-wrapper h3 {
+  text-align: center;
+  font-weight: 700;
+}
+
+#regions_div {
+  width: 100%;
+}
+
+@import 'https://code.highcharts.com/css/highcharts.css';
+
+.highcharts-background {
+  fill: #eff3ff;
+}
+
+.highcharts-root {
+    font-family: sans-serif;
+}
+
+footer {
+  max-width: 100%;
+  background-color: #bdd7e7;
+  padding: 30px;
+  bottom: 0;
+}
+
+footer p {
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-size: 16px;
+  padding: 5px;
 }
