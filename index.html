@@ -4,11 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Meta tags for Facebook-->
   <meta property="og:url" content="http://igor.gold.ac.uk/~llee003/ddFeature/index.html" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="How significant non-US players are in the NBA?" />
   <meta property="og:description" content="NBA has become an international league with over 100 non-US players playing top level basketball every night on the court. But how good the non-US players are?" />
   <meta property="og:image" content="http://igor.gold.ac.uk/~llee003/ddFeature/img/Giannis_Antetokounmpo.jpg" />
+
+  <!-- Meta tag for Google SEO-->
+
+  <meta name="description" content="NBA has become an international league with over 100 non-US players playing top level basketball every night on the court. But how good the non-US players are?">
+  <meta name="keywords" content="NBA, internatiol players, foreign players, non-US players, Giannis Antetokounmpo, Pau Gasol, Dirk Nowitzki, Manu Ginobili, Darko Milicic">
+
   <title>How significant Non-US players in NBA?</title>
 
   <!-- jQuery -->
@@ -30,9 +38,9 @@
 </head>
 
 <body>
-  <div id="fb-root"></div>
-  <div id="fb-root"></div>
 
+  <!-- Facebook follow & share buttons-->
+  <div id="fb-root"></div>
   <script>
     (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -44,15 +52,24 @@
     }(document, 'script', 'facebook-jssdk'));
   </script>
 
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
   <!-- Title for big screen -->
   <div class="uk-container-large uk-hidden-medium uk-hidden-small">
 
     <div class="giannis uk-cover-background uk-flex uk-flex-bottom uk-height-viewport uk-responsive-width uk-responsive-height">
       <div class="uk-container">
 
-        <h1>How significant non-US players are in the NBA?</h1>
+        <h1 class="title-font">How significant non-US players are in the NBA?</h1>
 
-        <h2>By <i>Lee Long Hui</i></h2>
+        <h2 class="byline-font">By <i>Lee Long Hui</i></h2>
 
         <div class="fb-share-button uk-display-block uk-margin-bottom" data-href="http://igor.gold.ac.uk/~llee003/ddFeature/index.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figor.gold.ac.uk%2F%7Ellee003%2FddFeature%2Findex.html&amp;src=sdkpreparse">Share</a></div>
 
@@ -71,35 +88,34 @@
   </div>
 
   <!-- Title for small screen -->
+  <div class="uk-container uk-container-large uk-hidden-large">
 
-  <div class="uk-container uk-hidden-large uk-margin-bottom uk-margin-top">
+    <div class="uk-margin-bottom uk-margin-top">
 
-    <div class="uk-container">
+      <h1 class="title-font">How significant non-US players are in the NBA?</h1>
 
-      <h1>How significant non-US players are in the NBA?</h1>
-
-      <h2>By <i>Lee Long Hui</i></h2>
+      <h2 class="byline-font">By <i>Lee Long Hui</i></h2>
 
     </div>
 
-    <img class="uk-margin-top uk-responsive-width uk-responsive-height" src="img/Giannis_Antetokounmpo.jpg" alt="">
+    <img class="uk-responsive-width uk-responsive-height" src="img/Giannis_Antetokounmpo.jpg" alt="">
 
-    <div class="uk-align-right uk-margin-bottom uk-hidden-large">
+    <div class="uk-align-center uk-margin-bottom uk-hidden-large">
       <h6>Antetokounmpo is attacking the basket in a match versus Cleveland Cavaliers. Photo by © User:<a href="https://www.flickr.com/people/62091376@N03" target="_blank">Erik Drost</a> / <a href="https://www.flickr.com/" target="_blank">Flickr</a>, <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">CC BY 2.0</a>, <a href="https://www.flickr.com/photos/edrost88/31669424142/" target="_blank">Link</a></h6>
     </div>
 
-    <div class="fb-share-button" data-href="http://igor.gold.ac.uk/~llee003/ddFeature/index.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figor.gold.ac.uk%2F%7Ellee003%2FddFeature%2Findex.html&amp;src=sdkpreparse">Share</a></div>
+      <div class="fb-share-button uk-display-block" data-href="http://igor.gold.ac.uk/~llee003/ddFeature/index.html" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figor.gold.ac.uk%2F%7Ellee003%2FddFeature%2Findex.html&amp;src=sdkpreparse">Share</a></div>
 
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="How significant non-US players are in the NBA?" data-via="leelonghui" data-hashtags="nba" data-show-count="false">Tweet</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-  </div>
+    <div class="uk-display-block uk-margin-top">
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="How significant non-US players are in the NBA?" data-via="leelonghui" data-hashtags="nba" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
 
   <!-- Story -->
   <div class="uk-container uk-container-center uk-margin-large-top">
     <article class="uk-article">
 
-      <p class="uk-article-lead">When Giannis Antetokounmpo joined the NBA in 2013, everyone can’t help but focus on his name. The Greece national has a unique name, which is pronounced as yahn-is anh-teh-toe-kuhn-po, and the name earned him the nickname “The Greek Alphabet”.</p>
+      <p>When Giannis Antetokounmpo joined the NBA in 2013, everyone can’t help but focus on his name. The Greece national has a unique name, which is pronounced as yahn-is anh-teh-toe-kuhn-po, and the name earned him the nickname “The Greek Alphabet”.</p>
 
       <p>In his rookie year, the Milwaukee Bucks’ small forward was averaging 6.8 points, 4.4 rebounds and 1.9 assists per game. But it has been a different story since then. In the current 2017-18 season, Antetokounmpo’s performance had sky-rocketed to
         29.5 points, 10.4 rebounds and 4.6 assists per game. </p>
@@ -152,8 +168,6 @@
       <h6>Pau Gasol helped Spain won the gold in European Basketball Championship 2011. Photo by © User:<a href="http://www.flickr.com/people/42774464@N03" target="_blank">Christopher Johnson</a> / <a href="https://www.flickr.com/" target="_blank">Flickr</a>, <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">CC BY 2.0</a>, <a href="https://www.flickr.com/photos/globalite/6243014885/" target="_blank">Link</a></h6>
     </div>
   </div>
-
-
 
   <div class="uk-container uk-container-center max-size">
     <article class="uk-article">
@@ -279,15 +293,10 @@
       </li>
       <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-3"></li>
       <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-3">
-        <div class="uk-display-block uk-margin-bottom">
-          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="How reports on Trump heated up #fakenews discussion on Twitter?" data-via="leelonghui" data-related="realDonaldTrump" data-show-count="false">Tweet</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
         <div class="uk-display-block uk-margin-top">
           <a href="https://twitter.com/leelonghui?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @leelonghui</a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
-
       </li>
     </ul>
   </footer>
@@ -550,7 +559,7 @@
 
     Highcharts.chart('sankey', {
       title: {
-        text: 'Non-US Players Nationality & Team'
+        text: 'Non-US Players Nationality & Team in 2017-18 season'
       },
       subtitle: {
         text: '<a href="http://stats.nba.com" target="_blank">NBA.com</a>',
