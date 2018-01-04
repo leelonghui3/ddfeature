@@ -2,22 +2,21 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <!-- Meta tags for Facebook-->
+  <meta property="og:site_name" content="Data Visualisation Coursework 2"/>
   <meta property="og:url" content="http://igor.gold.ac.uk/~llee003/ddFeature/index.html" />
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   <meta property="og:title" content="How significant non-US players are in the NBA?" />
   <meta property="og:description" content="NBA has become an international league with over 100 non-US players playing top level basketball every night on the court. But how good the non-US players are?" />
-  <meta property="og:image" content="http://igor.gold.ac.uk/~llee003/ddFeature/img/Giannis_Antetokounmpo.jpg" />
+  <meta property="og:image" content="http://igor.gold.ac.uk/~llee003/ddFeature/img/Giannis_Antetokounmpo.png" />
 
-  <!-- Meta tag for Google SEO-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google SEO meta tags -->
   <meta name="description" content="NBA has become an international league with over 100 non-US players playing top level basketball every night on the court. But how good the non-US players are?">
+  <title>How significant are Non-US players in the NBA?</title>
   <meta name="keywords" content="NBA, internatiol players, foreign players, non-US players, Giannis Antetokounmpo, Pau Gasol, Dirk Nowitzki, Manu Ginobili, Darko Milicic">
-
-  <title>How significant Non-US players in NBA?</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
   <!-- jQuery -->
   <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
@@ -39,7 +38,7 @@
 
 <body>
 
-  <!-- Facebook follow & share buttons-->
+  <!-- Facebook share buttons-->
   <div id="fb-root"></div>
   <script>
     (function(d, s, id) {
@@ -52,28 +51,18 @@
     }(document, 'script', 'facebook-jssdk'));
   </script>
 
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
-
   <!-- Title for big screen -->
   <div class="uk-container-large uk-hidden-medium uk-hidden-small">
 
     <div class="giannis uk-cover-background uk-flex uk-flex-bottom uk-height-viewport uk-responsive-width uk-responsive-height">
       <div class="uk-container">
 
-        <h1 class="title-font">How significant non-US players are in the NBA?</h1>
+        <h1 class="title-font">How significant are non-US players in the NBA?</h1>
 
         <h2 class="byline-font">By <i>Lee Long Hui</i></h2>
 
-        <div class="fb-share-button uk-display-block uk-margin-bottom" data-href="http://igor.gold.ac.uk/~llee003/ddFeature/index.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figor.gold.ac.uk%2F%7Ellee003%2FddFeature%2Findex.html&amp;src=sdkpreparse">Share</a></div>
-
-        <div class="uk-display-block uk-margin-top">
+        <div class="uk-display-inline-block">
+          <div class="fb-share-button" style="float: left; margin-right: 1em;" data-href="http://igor.gold.ac.uk/~llee003/ddFeature/index.html" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figor.gold.ac.uk%2F%7Ellee003%2FddFeature%2Findex.html&amp;src=sdkpreparse">Share</a></div>
 
           <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="How significant non-US players are in the NBA?" data-via="leelonghui" data-hashtags="nba" data-show-count="false">Tweet</a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -84,7 +73,7 @@
   </div>
 
   <div class="uk-align-right uk-margin-bottom uk-hidden-medium uk-hidden-small">
-    <h6>Antetokounmpo is attacking the basket in a match versus Cleveland Cavaliers. Photo by © User: <a href="https://www.flickr.com/people/62091376@N03" target="_blank">Erik Drost</a> / <a href="https://www.flickr.com/" target="_blank">Flickr</a>, <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">CC BY 2.0</a>, <a href="https://www.flickr.com/photos/edrost88/31669424142/" target="_blank">Link</a></h6>
+    <h5>Antetokounmpo is attacking the basket in a match versus Cleveland Cavaliers. Photo by © User: <a href="https://www.flickr.com/people/62091376@N03" target="_blank">Erik Drost</a> / <a href="https://www.flickr.com/" target="_blank">Flickr</a>, <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">CC BY 2.0</a>, <a href="https://www.flickr.com/photos/edrost88/31669424142/" target="_blank">Link</a></h5>
   </div>
 
   <!-- Title for small screen -->
@@ -92,26 +81,25 @@
 
     <div class="uk-margin-bottom uk-margin-top">
 
-      <h1 class="title-font">How significant non-US players are in the NBA?</h1>
+      <h1 class="title-font">How significant are non-US players in the NBA?</h1>
 
       <h3 class="byline-font">By <i>Lee Long Hui</i></h3>
 
     </div>
 
-    <img class="uk-responsive-width uk-responsive-height" src="img/Giannis_Antetokounmpo.jpg" alt="">
+    <img class="uk-responsive-width uk-responsive-height" src="img/Giannis_Antetokounmpo.png" alt="">
 
     <div class="uk-align-center uk-margin-bottom uk-hidden-large">
-      <h6>Antetokounmpo is attacking the basket in a match versus Cleveland Cavaliers. Photo by © User: <a href="https://www.flickr.com/people/62091376@N03" target="_blank">Erik Drost</a> / <a href="https://www.flickr.com/" target="_blank">Flickr</a>, <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">CC BY 2.0</a>, <a href="https://www.flickr.com/photos/edrost88/31669424142/" target="_blank">Link</a></h6>
+      <h5>Antetokounmpo is attacking the basket in a match versus Cleveland Cavaliers. Photo by © User: <a href="https://www.flickr.com/people/62091376@N03" target="_blank">Erik Drost</a> / <a href="https://www.flickr.com/" target="_blank">Flickr</a>, <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">CC BY 2.0</a>, <a href="https://www.flickr.com/photos/edrost88/31669424142/" target="_blank">Link</a></h5>
     </div>
 
     <div class="uk-display-inline-block">
-
-
       <div class="fb-share-button" data-href="http://igor.gold.ac.uk/~llee003/ddFeature/index.html" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Figor.gold.ac.uk%2F%7Ellee003%2FddFeature%2Findex.html&amp;src=sdkpreparse">Share</a></div>
 
-    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="How significant non-US players are in the NBA?" data-via="leelonghui" data-hashtags="nba" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-      </div>
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="How significant non-US players are in the NBA?" data-via="leelonghui" data-hashtags="nba" data-show-count="false">Tweet</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </div>
 
   <!-- Story -->
   <div class="uk-container uk-container-center uk-margin-large-top">
@@ -122,16 +110,16 @@
       <p>In his rookie year, the Milwaukee Bucks’ small forward was averaging 6.8 points, 4.4 rebounds and 1.9 assists per game. But it has been a different story since then. In the current 2017-18 season, Antetokounmpo’s performance had sky-rocketed to
         29.5 points, 10.4 rebounds and 4.6 assists per game. </p>
 
-      <p>The six-foot-11 and 222-pounder dominates the games with his all-rounded skills (except his three-point shooting). He is the second top scorer in the league and one of the fiercest most valuable player (MVP) award contenders for this season at the
-        age of 23.</p>
+      <p>The 6' 11" and 222-pounder dominates the games with his all-rounded skills (except his three-point shooting). He is the second top scorer in the league and one of the fiercest most valuable player (MVP) award contenders for this season at the age
+        of 23.</p>
 
-      <p>Antetokounmpo is another success story of the non-US players in the top basketball league of the world, but he was not the first.</p>
+      <p>Antetokounmpo's rise tells the story of a successful non-US player in the top basketball league in the world, but he is not the first.</p>
 
       <p>NBA has become an international league with over 100 non-US players playing top level basketball every night on the court. But how good the non-US players are? Yearly numbers show that the non-US players are getting more significant in the NBA.</p>
 
       <p>This article uses three statistical categories - points, rebounds and assists - to measure the players’ performance as they are the fundamental values to determine the efficiency of the players.</p>
 
-      <p>Players who have dual citizenship, such as Boston Celtics’ guard Kyrie Irving who had represented US national basketball team, were not categorised as a non-US player in this article.</p>
+      <p>Players who have dual citizenship, such as Boston Celtics’ guard Kyrie Irving who was part of the US national basketball team, were not categorised as a non-US player in this article.</p>
 
     </article>
   </div>
@@ -146,44 +134,45 @@
 
       <h2>Contributions are proportional to number of players</h2>
 
-      <p>NBA statistics show that the non-US players were getting more points, rebounds and assists since the 2000-01 season to the 2016-17 season. As the number of non-US players increases, these court contributions increase proportionately.</p>
+      <p>NBA statistics show that the non-US players have been getting more points, rebounds and assists since the 2000-01 season. As the number of non-US players increases, these court contributions increases proportionately.</p>
 
-      <p>Back in the 2000-2001 season, the total points, rebounds and assists accumulated by all 435 players of 29 teams in were 225,456, 100,987 and 51,787 respectively. The total 36 non-US players only contributed 6.47% of points, 8.26% rebounds and 4.94%
-        assists.</p>
+      <p>Back in the 2000-2001 season, the total points, rebounds and assists accumulated by all 435 players of 29 teams were 225,456, 100,987 and 51,787 respectively. The total 36 non-US players only contributed 6.47% of points, 8.26% rebounds and 4.94%
+        assists.
+      </p>
 
-      <p>In the 2016-2017 season, the number of non-US players had jumped to the highest record at 114 - approximately a quarter of the total 450 players of 30 teams.</p>
+      <p>In the 2016-2017 season, the number of non-US players had jumped to the highest ever at 114 - approximately a quarter of the total 450 players of 30 teams.</p>
 
       <p>The non-US players then contributed more than 20% shares in points, rebounds and assists in last season.</p>
 
-      <p>In the late 80s, NBA teams started looking for talents outside the US soil, but it did not become a trend until when people saw what Pau Gasol from Spain could deliver immediately after entering the league in 2001.</p>
+      <p>NBA teams started looking for talents from outside the US in the late 1980s, but it did not become a trend until people saw what Pau Gasol from Spain could deliver immediately after entering the league in 2001.</p>
 
-      <p>The seven-foot centre was playing for Memphis Grizzlies in his rookie year, and he immediately showed his talent by scoring 17.6 points, grabbing 8.9 rebounds and blocked 2.1 shots per game. His performance had won him the Rookie of the Year award
-        and two NBA championships later in 2009 and 2010 when he was playing for Los Angeles Lakers.</p>
+      <p>The seven-foot centre was playing for the Memphis Grizzlies in his rookie year, and he immediately showed his talent by scoring 17.6 points, grabbing 8.9 rebounds and blocked 2.1 shots per game. His performance had won him the Rookie of the Year
+        award and two NBA championships later in 2009 and 2010 when he was playing for the Los Angeles Lakers.</p>
 
     </article>
   </div>
 
   <!-- Pau Gasol image -->
   <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
-    <img class="uk-responsive-width uk-responsive-height" src="img/Pau_Gasol.jpg" alt="Pau Gasol">
+    <img class="uk-responsive-width uk-responsive-height" src="img/Pau_Gasol.png" alt="Pau Gasol">
     <div class="uk-align-center">
-      <h6>Pau Gasol helped Spain won the gold in European Basketball Championship 2011. Photo by © User: <a href="http://www.flickr.com/people/42774464@N03" target="_blank">Christopher Johnson</a> / <a href="https://www.flickr.com/" target="_blank">Flickr</a>, <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">CC BY 2.0</a>, <a href="https://www.flickr.com/photos/globalite/6243014885/" target="_blank">Link</a></h6>
+      <h5>Pau Gasol helped Spain won the gold in European Basketball Championship 2011. Photo by © User: <a href="http://www.flickr.com/people/42774464@N03" target="_blank">Christopher Johnson</a> / <a href="https://www.flickr.com/" target="_blank">Flickr</a>, <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">CC BY 2.0</a>, <a href="https://www.flickr.com/photos/globalite/6243014885/" target="_blank">Link</a></h5>
     </div>
   </div>
 
   <div class="uk-container uk-container-center max-size">
     <article class="uk-article">
 
-      <p>Spanish national basketball team also had emerged as a strong team internationally with Gasol, who had helped his country to win many gold and silver medals in international competitions.</p>
+      <p>The Spanish national basketball team has also emerged as a strong team internationally with Gasol, who had helped his country to win many gold and silver medals in international competitions.</p>
 
       <p>Another driving factor for the teams to recruit more non-US players was presumably the time when German power forward Dirk Nowitzki had a breakthrough season in 2000-01. He scored more than 20 points per game with his signature fadeaway jump shot
-        and led Dallas Mavericks to become one of best teams in the NBA for the next decade.</p>
+        and led the Dallas Mavericks to become one of best teams in the NBA for the next decade and won a NBA champio in the 2010-11 season.</p>
 
-      <h2>Other countries is catching up the US</h2>
+      <h2>Other countries are catching up the US</h2>
 
       <p>The US basketball team has been formed by NBA players since the 1992 Barcelona Olympic Games and it remained undefeated for the next ten consecutive years in all international competitions.</p>
 
-      <p>However, it suffered the first loss in the 2002 FIBA World Championship, only managed to get the sixth place in the tournament. It had then faced a setback again in the 2004 Athens Olympic Games, only winning a bronze medal.</p>
+      <p>However, it suffered the first loss in the 2002 FIBA World Championship, only managing to get the sixth place in the tournament. It had then faced a setback again in the 2004 Athens Olympic Games, only winning a bronze medal.</p>
 
       <p>Although the US was able to regain its top spot four years later in the 2008 Beijing Olympic Games, it showed that the US players are not the only one who can play world-class basketball.</p>
 
@@ -207,9 +196,9 @@
 
       <h2>Europe is the main talent pool</h2>
 
-      <p>Among others, Europe is one of the main talent pools for NBA teams due to its matured system of basketball leagues and training programme.</p>
+      <p>Europe is one of the main talent pools for NBA teams due to its matured system of basketball leagues and training programmes.</p>
 
-      <p>For the past 17 seasons, more than half of the 270 non-US players are from Europe.</p>
+      <p>For the past 17 seasons, more than half of the 270 non-US players came from Europe.</p>
 
       <p>This includes Italian player Andrea Bargnani, who was the first European player to be drafted first overall in 2006, and Pau Gasol’s younger brother Marc who joined the league in 2008.</p>
 
@@ -227,14 +216,14 @@
 
       <p>Europe may have produced many NBA players as a continent since year 2000, but it was Canada that has the most NBA players as a single country in the same period with 20 of them.</p>
 
-      <p>The boom in talented Canadian players in the NBA over the last 17 years can be attributed to several reasons. The country used to have two NBA teams in Vancouver and Toronto respectively which inspired many youngsters to play basketball over the
+      <p>The boom in talented Canadian players in the NBA over the last 17 years can be attributed to several reasons. The country used to have two NBA teams in Vancouver and Toronto respectivelys which inspired many youngsters to play basketball over the
         country’s most popular sport - ice hockey.</p>
 
       <p>The Vancouver Grizzlies left for Memphis, US, in 2001 while the Toronto Raptors still remains.</p>
 
       <p>One of the greatest Canadian basketball players, Steve Nash, a retired NBA guard who won two MVP titles consecutively, was well-known for his incredible passing and deathly three-point shooting skill.</p>
 
-      <p>The undergoing 2017-18 NBA season sees 109 non-US players from 42 countries playing in the league. Toronto Raptors has the most non-US players with seven, followed by Utah Jazz, San Antonio Spurs, Dallas Mavericks and Boston Celtics with six respectively.</p>
+      <p>The undergoing 2017-18 NBA season sees 108 non-US players from 42 countries playing in the league. The Toronto Raptors and Utah Jazz has the most non-US players with seven, followed by San Antonio Spurs and Philadelphia 76ers with six respectively.</p>
 
     </article>
   </div>
@@ -249,9 +238,9 @@
 
       <h2>Non-US players do not guarantee championship</h2>
 
-      <p>However, judging from the record of the past 17 seasons, having more non-US players does not necessarily mean better chance to win the NBA championship.</p>
+      <p>However, judging from the record of the past 17 seasons, having more non-US players does not necessarily mean a better chance of winning the NBA championship.</p>
 
-      <p>Most of the teams that won the previous championships have four or less non-US players on their rosters. Some champions, like the 2006 Miami Heat and the 2008 Boston Celtics not even have a single non-US player.</p>
+      <p>Most of the teams that won the previous championships have four or less non-US players on their rosters. Some champions, like the 2006 Miami Heat and the 2008 Boston Celtics do not even have a single non-US player.</p>
 
       <p>The San Antonio Spurs is the only team that have success stories to tell with its internationally diverse roster. The team had seven, five and eight non-US players in its roster respectively when it won the championship in 2005, 2007 and 2014.</p>
 
@@ -262,7 +251,7 @@
   <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
     <img class="uk-responsive-width uk-responsive-height" src="img/spurs.jpg" alt="Pau Gasol">
     <div class="uk-align-center">
-      <h6>Spurs players presented former US President Barack Obama with a Spurs team jersey during an event to welcome the 2014 NBA Champion San Antonio Spurs in the White House, 12 Jan 2015. Photo by © User: <a href="https://en.wikipedia.org/wiki/en:Pete_Souza" target="_blank">Pete Souza</a> / <a href="https://commons.wikimedia.org/" target="_blank">wikimedia Commons</a>, <a href="https://obamawhitehouse.archives.gov/blog/2015/01/12/president-obama-honors-2014-nba-champion-san-antonio-spurs" target="_blank">Link</a></h6>
+      <h5>Spurs players presented former US President Barack Obama with a Spurs team jersey during an event to welcome the 2014 NBA Champion San Antonio Spurs in the White House, 12 Jan 2015. Photo by © User: <a href="https://en.wikipedia.org/wiki/en:Pete_Souza" target="_blank">Pete Souza</a> / <a href="https://commons.wikimedia.org/" target="_blank">wikimedia Commons</a>, <a href="https://obamawhitehouse.archives.gov/blog/2015/01/12/president-obama-honors-2014-nba-champion-san-antonio-spurs" target="_blank">Link</a></h5>
     </div>
   </div>
 
@@ -274,15 +263,16 @@
         sheet.
       </p>
 
-      <p>This lead to a more prominent question for the NBA teams, does having more non-US players a guarantee to success?</p>
+      <p>This leads to an important question for the NBA teams - does having more non-US players a guarantee of success?</p>
 
-      <p>Although the non-US players began their influx into the league years ago, unfortunately not all players are performing at the level that meets the teams’ expectations. Some team had made wrong decisions in picking international players.</p>
+      <p>Although the non-US players began their influx into the league years ago, not all players are performing at the level that meets the teams’ expectations. Some team had made wrong decisions in picking international players.</p>
 
       <p>Most of these players have quit while some of them remain in the league, but not as the players that they were expected to be in the first place. Instead, they probably have become bench players who hardly earn the trust of coaches.</p>
 
-      <p>Darko Milicic from Serbia is one of the examples. Detroit Piston had chosen Milicic in the 2003 draft with its second overall pick. It has become a laughing stock for many years as the team overlooked better players like Carmelo Anthony, Chris Bosh and Dwyane Wade.</p>
+      <p>Darko Milicic from Serbia is one of the examples. Detroit Piston had chosen Milicic in the 2003 draft with its second overall pick. This decision has become a running joke for many years as the team overlooked better players like Carmelo Anthony,
+        Chris Bosh and Dwyane Wade.</p>
 
-      <p>Milicic left NBA in 2012 and became a kickboxer. During his nine-year career, he only averaged 6 points and 4.2 rebounds per game despite being a top pick.</p>
+      <p>Milicic left the NBA in 2012 and became a kickboxer. During his nine-year career, he only averaged 6 points and 4.2 rebounds per game despite being a top pick.</p>
 
     </article>
 
@@ -290,12 +280,14 @@
 
   <footer class="uk-container-expand">
     <ul class="uk-grid" data-uk-grid-margin>
-      <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-3">
-        <p>Lee Long Hui is a freelance journalist and MA Digital Journalism student at Goldsmiths, University of London. He is a big fan of San Antonio Spurs and his favourite NBA player is Manu Ginobili.</p>
+      <li class="uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
+        <div class="uk-container uk-container-center">
+          <p>Lee Long Hui is a freelance journalist and MA Digital Journalism student at Goldsmiths, University of London. He is a big fan of the San Antonio Spurs. His favourite NBA player is Manu Ginobili.</p>
+        </div>
       </li>
-      <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-3"></li>
-      <li class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-small-1-3">
-        <div class="uk-display-block uk-margin-top">
+      <li class="uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1"></li>
+      <li class="uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
+        <div class="uk-container uk-container-small uk-align-right">
           <a href="https://twitter.com/leelonghui?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @leelonghui</a>
           <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
@@ -379,7 +371,7 @@
         },
         tooltip: {
           textStyle: {
-            fontName: 'Arial',
+            fontName: 'Georgia'
           }
         }
       };
@@ -396,7 +388,7 @@
 
     Highcharts.chart('chart', {
       title: {
-        text: "Non-US Players' Contribution on Court"
+        text: "Non-US Players' Contribution on The Court"
       },
       subtitle: {
         text: '<a href="http://stats.nba.com" target="_blank">NBA.com</a>',
@@ -465,15 +457,15 @@
         floating: true,
         align: 'left',
         x: 35,
-        text: 'Where Non-US Players have Come From?',
+        text: 'Where Do Non-US Players Come From?',
       },
-      subtitle: {
-        floating: true,
-        align: 'left',
-        y: 35,
-        x: 35,
-        text: '<a href="http://stats.nba.com" target="_blank">NBA.com</a>',
-      },
+      // subtitle: {
+      //   floating: true,
+      //   align: 'left',
+      //   y: 35,
+      //   x: 35,
+      //   text: '<a href="http://stats.nba.com" target="_blank">NBA.com</a>',
+      // },
       credits: {
         text: 'Lee Long Hui',
         href: 'https://twitter.com/leelonghui'
@@ -561,7 +553,7 @@
 
     Highcharts.chart('sankey', {
       title: {
-        text: 'Non-US Players Nationality & Team in 2017-18 season'
+        text: "Non-US Players' Nationality & Team in The 2017-18 season"
       },
       subtitle: {
         text: '<a href="http://stats.nba.com" target="_blank">NBA.com</a>',
@@ -578,15 +570,16 @@
           ['Argentina', 'ATL', 1],
           ['Argentina', 'SAS', 1],
           ['Australia', 'BOS', 2],
-          ['Australia', 'CHA', 1],
           ['Australia', 'LAL', 1],
           ['Australia', 'MIL', 1],
           ['Australia', 'PHI', 1],
           ['Australia', 'SAS', 1],
-          ['Australia', 'UTA', 1],
+          ['Australia', 'UTA', 2],
           ['Austria', 'TOR', 1],
           ['Bahamas', 'SAC', 1],
+          ['Bosnia & Herzegovina', 'LAL', 1],
           ['Bosnia & Herzegovina', 'MIL', 1],
+          ['Bosnia & Herzegovina', 'POR', 1],
           ['Brazil', 'CHI', 1],
           ['Brazil', 'HOU', 1],
           ['Brazil', 'TOR', 2],
@@ -594,10 +587,10 @@
           ['Cameroon', 'HOU', 1],
           ['Cameroon', 'PHI', 1],
           ['Cameroon', 'TOR', 1],
-          ['Canada', 'BKN', 1],
+          ['Canada', 'PHI', 1],
           ['Canada', 'CLE', 1],
           ['Canada', 'DAL', 1],
-          ['Canada', 'DEN', 1],
+          ['Canada', 'DEN', 2],
           ['Canada', 'IND', 1],
           ['Canada', 'LAL', 1],
           ['Canada', 'MEM', 1],
@@ -609,7 +602,6 @@
           ['Congo', 'ORL', 1],
           ['Croatia', 'CLE', 1],
           ['Croatia', 'IND', 1],
-          ['Croatia', 'LAL', 1],
           ['Croatia', 'ORL', 1],
           ['Croatia', 'PHI', 1],
           ['Croatia', 'PHX', 1],
@@ -627,16 +619,16 @@
           ['France', 'SAS', 2],
           ['France', 'UTA', 1],
           ['France', 'WAS', 1],
+          ['France', 'NOP', 1],
           ['Georgia', 'GSW', 1],
           ['Germany', 'ATL', 1],
           ['Germany', 'BOS', 1],
-          ['Germany', 'PHI', 1],
+          ['Germany', 'CHI', 1],
           ['Germany', 'DAL', 2],
           ['Greece', 'MIL', 1],
           ['Greece', 'SAC', 1],
           ['Haiti', 'SAC', 1],
           ['Israel', 'GSW', 1],
-          ['Israel', 'IND', 1],
           ['Italy', 'ATL', 1],
           ['Italy', 'LAC', 1],
           ['Latvia', 'NYK', 1],
@@ -649,7 +641,7 @@
           ['Montenegro', 'ORL', 1],
           ['New Zealand', 'OKC', 1],
           ['Poland', 'WAS', 1],
-          ['Puerto Rico', 'DAL', 2],
+          ['Puerto Rico', 'DAL', 1],
           ['Russia', 'BKN', 1],
           ['Senegal', 'MIN', 1],
           ['Serbia', 'DEN', 1],
@@ -665,8 +657,8 @@
           ['Spain', 'NYK', 1],
           ['Spain', 'OKC', 1],
           ['Spain', 'SAS', 1],
-          ['Spain', 'TOR', 1],
           ['Spain', 'UTA', 1],
+          ['Spain', 'TOR', 1],
           ['Sweden', 'UTA', 1],
           ['Switzerland', 'HOU', 1],
           ['Switzerland', 'UTA', 1],
